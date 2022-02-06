@@ -1,7 +1,12 @@
 <div class="container">
-  <p>
-    My quotes for today are {{quote}}
-  </p>
+  <h1>My Quotes
+    <ul>
+      <li *ngFor="let quote of quote">
+        {{quote}}
+
+      </li>
+    </ul>
+  </h1>
 
 </div>
 <app-quotes-app></app-quotes-app>
