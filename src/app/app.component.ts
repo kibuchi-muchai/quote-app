@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quote = 'Life is a long lesson in humility';
+  quote :string[];
+
+  constructor(){
+    this.quote = ['The way to get started is to quit talking and begin doing', 'Life is what happens when you are busy making other plans', 'Whoever is happy will make others happy too']
+  }
 }
