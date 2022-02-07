@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Quotes } from '../quotes';
 import { AppComponent } from '../app.component';
 import { QuoteDetailComponent } from '../quote-detail/quote-detail.component';
+import { FormsModule } from '@angular/forms';
+import { QuoteFormComponent } from '../quote-form/quote-form.component';
 
 @Component({
   selector: 'app-quotes-app',

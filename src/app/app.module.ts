@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { QuotesAppComponent } from './quotes-app/quotes-app.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { DateCountPipe } from './date-count.pipe';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 // import { StrikethroughDirective } from './strikethrough.directive';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { DateCountPipe } from './date-count.pipe';
     QuotesAppComponent,
     QuoteDetailComponent,
     DateCountPipe,
+    QuoteFormComponent,
     // StrikethroughDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
