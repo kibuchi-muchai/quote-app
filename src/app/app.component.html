@@ -1,13 +1,12 @@
 <div class="container">
-  <h1>My Quotes
+  <h1>
+    <hr>
     <ul>
-      <li *ngFor="let quote of quote">
-        {{quote}}
+      <li *ngFor = 'let quote of quotes'>
+        {{quote.name}}
 
       </li>
     </ul>
   </h1>
-
+  <p *nglf='quote.length>5'>Your quotes are too many</p>
 </div>
-<app-quotes-app></app-quotes-app>
-<router-outlet></router-outlet>

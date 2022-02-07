@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class QuotesAppComponent implements OnInit {
   
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void{}
+  
+
+  constructor( ) { }
+
 
 }

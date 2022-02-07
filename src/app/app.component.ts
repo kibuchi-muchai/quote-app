@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Quote } from '@angular/compiler';
+import { QuotesAppComponent } from './quotes-app/quotes-app.component'
+import { Quotes } from './quotes';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +9,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quote :string[];
-
-  constructor(){
-    this.quote = ['The way to get started is to quit talking and begin doing', 'Life is what happens when you are busy making other plans', 'Whoever is happy will make others happy too']
-  }
+  title = 'quotes';
+  quote: Quotes[] = [
+    {id:1, name:'Life is what happens when you are busy making other plans'},
+    {id:2, name:'Turn your wounds into wisdom'},
+    {id:3, name:'Life is like reading a bicycle.To keep your balance,you must keep moving'}
+  ]
+    
+      
+  
+  
 }
