@@ -11,9 +11,9 @@ import { QuotesAppComponent } from './quotes-app/quotes-app.component';
 export class AppComponent {
   title = 'quotes';
   quote: Quotes[] = [
-    new Quotes(1,'Life is what happens when you are busy making other plans','Take a moment to enjoy life'),
-    new Quotes(2,'Turn your wounds into wisdom','emerge fearless out of a situation'),
-    new Quotes(3, 'Life is like reading a bicycle.To keep your balance,you must keep moving','dont ever give up')
+    new Quotes(1,'Life is what happens when you are busy making other plans','Take a moment to enjoy life', new Date(2021,4,4)),
+    new Quotes(2,'Turn your wounds into wisdom','emerge fearless out of a situation', new Date(2021,5,6)),
+    new Quotes(3, 'Life is like reading a bicycle.To keep your balance,you must keep moving','dont ever give up', new Date(2021,7,8))
 
 
   ]

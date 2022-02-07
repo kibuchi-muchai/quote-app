@@ -14,6 +14,11 @@ export class QuotesAppComponent implements OnInit {
     toggleDetails(index: string | number){
       this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
+    completeQuote(isComplete: any, index: any){
+      if (isComplete){
+        this.quotes.splice(index,1);
+      }
+    }
   
   
 
