@@ -9,25 +9,41 @@ import { QuoteDetailComponent } from '../quote-detail/quote-detail.component';
   styleUrls: ['./quotes-app.component.css']
 })
 export class QuotesAppComponent implements OnInit {
+  ngOnInit(): void {
+      
+  }
   quotes: any;
 
     toggleDetails(index: string | number){
       this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
-    completeQuote(isComplete: any, index: any){
-      if (isComplete){
-        this.quotes.splice(index,1);
+    deleteQuote(isComplete: any, index: any){
+      if (isComplete) {
+        let toDelete = confirm('Are you sure you want to delete ${this.quotes[index].name}?')
+
+        if (toDelete){
+          this.quotes.splice(index,1)
+        }
       }
+    }
     }
   
   
 
 
 
-  ngOnInit(): void{}
+  ngOnInit(); void{}
   
 
-  constructor( ) { }
+  constructor( ) 
 
 
+
+function ngOnInit() {
+  throw new Error('Function not implemented.');
 }
+
+function constructor() {
+  throw new Error('Function not implemented.');
+}
+
