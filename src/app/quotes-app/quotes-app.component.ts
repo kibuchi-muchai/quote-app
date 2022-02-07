@@ -9,12 +9,13 @@ import { QuoteDetailComponent } from '../quote-detail/quote-detail.component';
   styleUrls: ['./quotes-app.component.css']
 })
 export class QuotesAppComponent implements OnInit {
-  quotes:Quotes[]=[
-    new Quotes(1,'Life is what happens when you are busy making other plans','Take a moment to enjoy life'),
-    new Quotes(2,'Turn your wounds into wisdom','emerge fearless out of a situation'),
-    new Quotes(3, 'Life is like reading a bicycle.To keep your balance,you must keep moving','dont ever give up')
+  quotes: any;
 
-  ]
+    toggleDetails(index: string | number){
+      this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    }
+  
+  
 
 
 
