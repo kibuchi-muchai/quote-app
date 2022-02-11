@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Quote } from '@angular/compiler';
 import { Quotes } from './quotes';
 import { QuotesAppComponent } from './quotes-app/quotes-app.component';
+import { FormsModule } from '@angular/forms';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +18,14 @@ export class AppComponent {
     new Quotes(3, 'Life is like reading a bicycle.To keep your balance,you must keep moving','dont ever give up', new Date(2021,7,8))
 
 
-  ]
+  ];
+  quotes: any;
+  addNewQuote(quote: { id: number;  name:string; showDescription:boolean; description:string ; completeDate:Date}){
+    let quoteLength = this.quote.length;
+    quote.id = quoteLength+1;
+    this.quotes.completeDate = new Date(quote.completeDate)
+    this.quote.push(quote)
+  }
     
       
   

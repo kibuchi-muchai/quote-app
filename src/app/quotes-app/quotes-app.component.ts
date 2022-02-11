@@ -4,6 +4,8 @@ import { AppComponent } from '../app.component';
 import { QuoteDetailComponent } from '../quote-detail/quote-detail.component';
 import { FormsModule } from '@angular/forms';
 import { QuoteFormComponent } from '../quote-form/quote-form.component';
+import { EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-quotes-app',
